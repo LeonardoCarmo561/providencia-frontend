@@ -1,10 +1,10 @@
 'use client'
 
 import { useThemeContext } from '@/hooks'
-import { Titillium_Web as TitilliumWeb } from 'next/font/google'
+import { Open_Sans as OpenSans } from 'next/font/google'
 import { ReactNode } from 'react'
 
-const titillium = TitilliumWeb({
+const openSans = OpenSans({
   subsets: ['latin'],
   weight: '400',
 })
@@ -12,7 +12,7 @@ const titillium = TitilliumWeb({
 export function ThemeWrapper({ children }: { children: ReactNode }) {
   const { themeName } = useThemeContext()
   return (
-    <body data-mode={themeName} className={titillium.className}>
+    <body data-mode={themeName} className={openSans.className}>
       {children}
     </body>
   )

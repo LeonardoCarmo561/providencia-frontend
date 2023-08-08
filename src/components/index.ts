@@ -1,2 +1,7 @@
 export * from './toggle-theme-button'
+export * from './toggle-theme-switch'
+export * from './toggle-language'
+export * from './header-button'
 export * from './theme-wrapper'
+export * from './forms'
+export * from './header'
